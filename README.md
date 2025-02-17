@@ -3,7 +3,8 @@ Weather Bot Telegram is a sophisticated and user-friendly Telegram bot built usi
 
 Whether you’re planning your day or keeping track of changing weather patterns, this bot ensures that users are always up-to-date with weather forecasts tailored to their chosen locations.
 
-![Screenshot (147)](https://github.com/user-attachments/assets/8e9851e8-5ff9-4f58-908e-872fdd2d45a3)
+![Weather bot access ](https://github.com/user-attachments/assets/07f36dd5-5049-48e5-aedc-d945187c3a56)
+
 
 **Table of Contents**
 Features
