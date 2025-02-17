@@ -1,78 +1,102 @@
-# Weather Bot Telegram - Nest.js
+**Weather Bot Telegram - Nest.js**
+Weather Bot Telegram is a sophisticated and user-friendly Telegram bot built using Nest.js, designed to provide real-time weather updates and forecasts to users. The bot allows users to subscribe to weather notifications for specific cities, keeping them informed with the latest weather information directly in their Telegram app.
 
-Weather Bot Telegram is a Telegram bot built using Nest.js that provides weather updates to subscribed users. Users can register to receive weather updates for a specific city.
+Whether you’re planning your day or keeping track of changing weather patterns, this bot ensures that users are always up-to-date with weather forecasts tailored to their chosen locations.
 
-## Table of Contents
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-- [Usage](#usage)
-- [Endpoints](#endpoints)
-- [Contributing](#contributing)
-- [License](#license)
+![Screenshot (147)](https://github.com/user-attachments/assets/8e9851e8-5ff9-4f58-908e-872fdd2d45a3)
 
-## Features
+**Table of Contents**
+Features
+Prerequisites
+Installation
+Configuration
+Usage
+Commands
+Endpoints
+Contributing
+License
 
-- Users can subscribe to receive weather updates.
-- Weather updates are sent periodically to subscribed users.
-- Users can unsubscribe to stop receiving weather updates.
-- MongoDB is used to store user data.
-- Integration with the OpenWeatherMap API for weather data.
+**Features**
+**Real-time weather updates**: Receive the latest weather data for any subscribed city.
+**Subscription management**: Users can easily subscribe and unsubscribe to weather updates for specific locations.
+**MongoDB integration**: User data, including subscriptions, are stored in MongoDB.
+**Seamless Telegram interaction**: Users can interact with the bot through simple Telegram commands like /subscribe and /unsubscribe.
+**OpenWeatherMap integration**: Fetch accurate and detailed weather information using the OpenWeatherMap API.
+**Customizable alerts**: Set up periodic weather updates to keep users informed.
 
-## Prerequisites
+**Prerequisites**
+Before you begin, ensure that the following tools are installed:
 
-Before running the project, make sure you have the following installed:
+**Node.js** (version 16.x or later recommended)
+**MongoDB** (for storing user and subscription data)
+**npm or yarn**
 
-- [Node.js](https://nodejs.org/)
-- [MongoDB](https://www.mongodb.com/)
-- [npm](https://www.npmjs.com/)
+**Installation**
+**1. Clone the repository**
+git clone https://github.com/yourusername/weather-bot-telegram.git
 
-## Getting Started
+**2. Navigate to the project folder**
+cd weather-bot-telegram
 
-### Installation
+**3. Install project dependencies**
+npm install
 
-1. Clone the repository:
+Or, if you prefer Yarn:
+yarn install
 
-   ```shell
-   git clone https://github.com/yourusername/weather-bot-telegram.git
-   ```
-2. Run the Admin Dashboard
-    ```
-   cd weather-bot-telegram
-   npm install
-   ```
-3. Create a .env file in the project root and configure your environment variables:
-    ```
-    TELEGRAM_BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
-    CITY=YOUR_DEFAULT_CITY
-    MONGODB_URI=YOUR_MONGODB_CONNECTION_URI
-    OPENWEATHERMAP_API_KEY=YOUR_OPENWEATHERMAP_API_KEY
-    ```
-    
-4. Start the Nest.js application:
-    ```
-    npm start
-    ```
-5. Your Telegram bot is now running and ready to receive commands.
+**4. Configure the environment variables**
+In the root directory of the project, create a .env file and configure the following environment variables:
+TELEGRAM_BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
+MONGODB_URI=YOUR_MONGODB_CONNECTION_URI
+OPENWEATHERMAP_API_KEY=YOUR_OPENWEATHERMAP_API_KEY
+CITY=YOUR_DEFAULT_CITY (Optional, set a default city for the bot to track)
 
-6. Users can interact with the bot by sending commands like /subscribe and /unsubscribe.
+**TELEGRAM_BOT_TOKEN**: Your unique token from BotFather.
+**MONGODB_URI**: The connection string for your MongoDB database.
+**OPENWEATHERMAP_API_KEY**: Your API key from OpenWeatherMap.
+**CITY**: Default city for weather tracking (optional).
 
+**5. Start the bot**
+To start the bot, run the following command:
+npm run start
 
-## Contributing
-- Contributions are welcome! Please follow these guidelines:
+Your Weather Bot is now live and ready to serve weather updates via Telegram!
 
-    - Fork the repository.
-    - Create a new branch: git checkout -b feature/your-feature.
-    - Commit your changes: git commit -m 'Add new feature'.
-    - Push to your branch: git push origin feature/your-feature.
-    - Create a pull request.
-    
-## Licence
+**Usage**
+Once the bot is running, users can interact with it by sending commands to receive real-time weather updates.
 
-- This is a open source project, users can contribute according to open source guidelines.
+**Commands**
+**/subscribe [city]**: Subscribe to receive weather updates for the specified city.
+**/unsubscribe**: Unsubscribe from weather updates.
+**/status**: Get the current weather for your subscribed city.
+**/help**: Display a list of available commands.
+Users can subscribe to as many cities as they wish and will receive periodic weather updates based on their preferences.
 
+**Endpoints**
+The Weather Bot exposes the following endpoints for handling user requests:
 
+**/subscribe**: Allows users to subscribe to weather updates for a specific city.
+**/unsubscribe**: Unsubscribes the user from all weather notifications.
+**/status**: Provides the current weather details of the subscribed city.
+These endpoints handle communication between the Telegram bot and the back-end server to send notifications.
 
-![Bot](https://github.com/sparsh02/NestJS-Weather-BOT/assets/54232718/8af0882d-cec0-4b74-ad23-2c6f0782c339)
+**Contributing**
+We welcome contributions to Weather Bot Telegram! If you’d like to contribute, please follow these guidelines:
+
+Fork the repository.
+Create a new branch: git checkout -b feature/your-feature.
+Implement your changes.
+Write tests (if applicable).
+Commit your changes: git commit -m 'Add new feature'.
+Push to your branch: git push origin feature/your-feature.
+Open a pull request.
+
+**Code of Conduct**
+Please make sure to follow the project’s code of conduct when contributing. Be respectful and considerate in your interactions with the community.
+
+**License**
+This project is licensed under the MIT License. Feel free to modify, distribute, and contribute according to the open-source guidelines.
+
+**Additional Information**
+
+Weather Bot Telegram was built with ease of use in mind. The modular and extensible architecture of Nest.js ensures that this bot can be easily maintained, extended, and scaled in the future. Whether you're interested in contributing, customizing the bot for your own use case, or simply looking for a weather notification system, this project provides a solid foundation.
