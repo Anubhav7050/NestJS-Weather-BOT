@@ -119,7 +119,7 @@ function Portal() {
 
       {/* Footer */}
       <Typography variant="body2" style={{ marginTop: '20px' }}>
-        You can find the bot at: <Link href="https://t.me/Vivekweatherbot" target="_blank" rel="noopener noreferrer">https://telegram-link-to-bot</Link>
+        You can find the bot at: <Link href="https://t.me/anutelebotweatherbot" target="_blank" rel="noopener noreferrer">https://telegram-link-to-bot</Link>
       </Typography>
     </Container>
   );
